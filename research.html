@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b52">
+  <meta name="description" content="Research by Udita Rahman Arshee on energy-efficient wireless sensor networks and hierarchical reinforcement learning.">
+  <title>Research · Udita Rahman Arshee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Source+Serif+4:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <div class="focus-bar">Wireless Sensor Networks · IoT · Learning-Based Optimization</div>
+  <header class="site-header"><div class="wrap header-row">
+    <a class="brand" href="index.html" aria-label="Udita Rahman Arshee home">URA</a>
+    <nav aria-label="Primary navigation"><a href="index.html">Home</a><a href="research.html" class="active" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="projects.html">Projects</a><a href="education.html">Education</a></nav>
+  </div></header>
+  <main class="wrap">
+<div class="page-intro"><p class="kicker">Research</p><h1>Energy-Aware Wireless Systems</h1><p class="section-intro">My work connects wireless sensor network performance with constrained, learning-based resource allocation. The central question is how adaptive decisions can preserve scarce energy without neglecting latency, reliability, or fairness.</p></div>
+<section id="sced-hrl">
+  <div class="research-card"><div class="research-visual"><svg class="research-art" viewBox="0 0 560 280" role="img" aria-label="Sensor network with energy-aware control" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="netbg" x2="1" y2="1"><stop stop-color="#eef6f7"/><stop offset="1" stop-color="#f8fbf8"/></linearGradient></defs>
+      <rect x="1" y="1" width="558" height="278" rx="15" fill="url(#netbg)" stroke="#dce9e7"/>
+      <g fill="none" stroke="#a8c9cb" stroke-width="2"><path d="M95 65 178 103 263 56 353 100 452 61M95 65 104 183 196 210 178 103 263 56 278 177 353 100 452 61 457 202 370 216 278 177 196 210 104 183M178 103 278 177 353 100M263 56 353 100 370 216"/></g>
+      <g fill="#fff" stroke="#2f7890" stroke-width="3"><circle cx="95" cy="65" r="12"/><circle cx="178" cy="103" r="12"/><circle cx="263" cy="56" r="12"/><circle cx="353" cy="100" r="12"/><circle cx="452" cy="61" r="12"/><circle cx="104" cy="183" r="12"/><circle cx="196" cy="210" r="12"/><circle cx="278" cy="177" r="12"/><circle cx="370" cy="216" r="12"/><circle cx="457" cy="202" r="12"/></g>
+      <circle cx="278" cy="177" r="27" fill="#2f7890" opacity=".13"/><circle cx="278" cy="177" r="12" fill="#2f7890"/>
+      <g fill="#24566a" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="600"><text x="22" y="250">SENSOR NODES</text><text x="397" y="250">ENERGY-AWARE ROUTING</text></g>
+    </svg><span>Sensor network topology and energy-aware control (conceptual illustration)</span></div><div class="research-copy">
+    <div class="status-row"><span class="badge">Undergraduate Thesis</span><span class="badge submitted">Manuscript Submitted</span></div>
+    <p class="meta">Wireless Sensor Networks · Energy Optimization</p>
+    <h2>Spatially-Constrained Event-Driven Hierarchical Deep Reinforcement Learning (SCED-HRL)</h2>
+    <p>My B.Sc. thesis develops a hierarchical controller for energy optimization in wireless sensor networks. It combines a strategic, event-driven PPO layer with parameter-shared DDQN tactical agents and spatial energy budgeting.</p>
+    <div class="research-question"><strong>Research goal:</strong> improve network lifetime and regional energy balance while tracking latency and packet delivery.</div>
+    <ul><li>Feasible actions and regional budgets help prevent short-term gains from exhausting parts of the network.</li><li>Evaluation uses Intel Berkeley sensor data-derived and synthetic traffic alongside baseline control strategies.</li></ul>
+  </div></div>
+</section>
+<section id="control">
+  <div class="research-card"><div class="research-visual"><svg class="research-art" viewBox="0 0 560 280" role="img" aria-label="Hierarchical network controller with strategic and tactical layers" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="558" height="278" rx="15" fill="#f5f9f8" stroke="#dce9e7"/>
+      <path d="M280 88V118M280 176V199M162 199V185H398V199" fill="none" stroke="#9dbfc5" stroke-width="3"/>
+      <g font-family="Inter,Arial,sans-serif" text-anchor="middle">
+        <rect x="174" y="35" width="212" height="54" rx="10" fill="#173b52"/><text x="280" y="58" fill="#fff" font-size="15" font-weight="700">Strategic control</text><text x="280" y="76" fill="#c6e7e8" font-size="11">event-driven PPO</text>
+        <rect x="174" y="120" width="212" height="56" rx="10" fill="#287788"/><text x="280" y="143" fill="#fff" font-size="15" font-weight="700">Tactical decisions</text><text x="280" y="161" fill="#d9f0ef" font-size="11">shared DDQN agents</text>
+        <rect x="72" y="199" width="180" height="51" rx="10" fill="#e5f1ef" stroke="#9dbfc5"/><text x="162" y="230" fill="#24566a" font-size="13" font-weight="600">Region A · energy budget</text>
+        <rect x="308" y="199" width="180" height="51" rx="10" fill="#e5f1ef" stroke="#9dbfc5"/><text x="398" y="230" fill="#24566a" font-size="13" font-weight="600">Region B · energy budget</text>
+      </g>
+    </svg><span>Strategic and tactical layers (conceptual illustration)</span></div><div class="research-copy">
+    <p class="meta">Hierarchical Reinforcement Learning</p><h2>Adaptive Control Under Network Constraints</h2>
+    <p>Event-driven strategic decisions and shared tactical policies respond to changes in network conditions. Spatial energy constraints and action masking keep decisions tied to feasible deployment behavior.</p>
+    <ul><li>Strategic layer: event-driven PPO.</li><li>Tactical layer: parameter-shared DDQN agents.</li><li>Evaluation dimensions: lifetime, fairness, latency, and packet delivery.</li></ul>
+  </div></div>
+</section>
+<section><div class="section-head"><p class="kicker">Related Interests</p><h2>Beyond the Thesis</h2></div>
+  <div class="grid-2">
+    <div class="card"><h3>IoT &amp; Wireless Communications</h3><p>Connected sensor systems, communication reliability, and resource-aware design across changing traffic and deployment conditions.</p></div>
+    <div class="card"><h3>Learning for Resource Management</h3><p>Reinforcement learning and optimization methods evaluated through practical network outcomes and feasibility constraints.</p></div>
+  </div>
+</section>
+</main>
+  <footer class="site-footer"><div class="wrap footer-grid">
+    <div><strong>© 2026 Udita Rahman Arshee</strong><span>Wireless networks research · Khulna, Bangladesh</span></div>
+    <div class="footer-links"><a href="mailto:uditrahman2001@gmail.com">✉ Email</a><a href="https://www.linkedin.com/in/udita-arshee-65b411240/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/udita-arshee" target="_blank" rel="noopener">GitHub</a></div>
+  </div></footer>
+</body>
+</html>
