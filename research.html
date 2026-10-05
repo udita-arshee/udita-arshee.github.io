@@ -1,68 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173b52">
-  <meta name="description" content="Research by Udita Rahman Arshee on energy-efficient wireless sensor networks and hierarchical reinforcement learning.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research · Udita Rahman Arshee</title>
+  <meta name="description" content="Research of Udita Rahman Arshee on SCED-HRL, energy-efficient wireless sensor networks, federated intrusion detection and communication-efficient learning." />
+  <meta name="theme-color" content="#173b52" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Source+Serif+4:wght@500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="canonical" href="https://udita-arshee.github.io/research.html" />
 </head>
 <body>
-  <div class="focus-bar">Wireless Sensor Networks · IoT · Learning-Based Optimization</div>
+  <div class="focus-bar">Wireless Networks · WSN/IoT · Intelligent Communications</div>
   <header class="site-header"><div class="wrap header-row">
     <a class="brand" href="index.html" aria-label="Udita Rahman Arshee home">URA</a>
     <nav aria-label="Primary navigation"><a href="index.html">Home</a><a href="research.html" class="active" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="projects.html">Projects</a><a href="education.html">Education</a></nav>
   </div></header>
   <main class="wrap">
-<div class="page-intro"><p class="kicker">Research</p><h1>Energy-Aware Wireless Systems</h1><p class="section-intro">My work connects wireless sensor network performance with constrained, learning-based resource allocation. The central question is how adaptive decisions can preserve scarce energy without neglecting latency, reliability, or fairness.</p></div>
+<div class="page-intro"><p class="kicker">Research</p><h1>Intelligent Wireless Networks Under Resource Constraints</h1><p class="section-intro">My work focuses on how learning-based control can improve wireless sensor and IoT systems when energy, communication cost and operational feasibility must remain explicit. The emphasis is not only on prediction or control quality, but on whether the resulting network behavior is efficient, measurable and deployable.</p></div>
 <section id="sced-hrl">
-  <div class="research-card"><div class="research-visual"><svg class="research-art" viewBox="0 0 560 280" role="img" aria-label="Sensor network with energy-aware control" xmlns="http://www.w3.org/2000/svg">
-      <defs><linearGradient id="netbg" x2="1" y2="1"><stop stop-color="#eef6f7"/><stop offset="1" stop-color="#f8fbf8"/></linearGradient></defs>
-      <rect x="1" y="1" width="558" height="278" rx="15" fill="url(#netbg)" stroke="#dce9e7"/>
-      <g fill="none" stroke="#a8c9cb" stroke-width="2"><path d="M95 65 178 103 263 56 353 100 452 61M95 65 104 183 196 210 178 103 263 56 278 177 353 100 452 61 457 202 370 216 278 177 196 210 104 183M178 103 278 177 353 100M263 56 353 100 370 216"/></g>
-      <g fill="#fff" stroke="#2f7890" stroke-width="3"><circle cx="95" cy="65" r="12"/><circle cx="178" cy="103" r="12"/><circle cx="263" cy="56" r="12"/><circle cx="353" cy="100" r="12"/><circle cx="452" cy="61" r="12"/><circle cx="104" cy="183" r="12"/><circle cx="196" cy="210" r="12"/><circle cx="278" cy="177" r="12"/><circle cx="370" cy="216" r="12"/><circle cx="457" cy="202" r="12"/></g>
-      <circle cx="278" cy="177" r="27" fill="#2f7890" opacity=".13"/><circle cx="278" cy="177" r="12" fill="#2f7890"/>
-      <g fill="#24566a" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="600"><text x="22" y="250">SENSOR NODES</text><text x="397" y="250">ENERGY-AWARE ROUTING</text></g>
-    </svg><span>Sensor network topology and energy-aware control (conceptual illustration)</span></div><div class="research-copy">
-    <div class="status-row"><span class="badge">Undergraduate Thesis</span><span class="badge submitted">Manuscript Submitted</span></div>
-    <p class="meta">Wireless Sensor Networks · Energy Optimization</p>
-    <h2>Spatially-Constrained Event-Driven Hierarchical Deep Reinforcement Learning (SCED-HRL)</h2>
-    <p>My B.Sc. thesis develops a hierarchical controller for energy optimization in wireless sensor networks. It combines a strategic, event-driven PPO layer with parameter-shared DDQN tactical agents and spatial energy budgeting.</p>
-    <div class="research-question"><strong>Research goal:</strong> improve network lifetime and regional energy balance while tracking latency and packet delivery.</div>
-    <ul><li>Feasible actions and regional budgets help prevent short-term gains from exhausting parts of the network.</li><li>Evaluation uses Intel Berkeley sensor data-derived and synthetic traffic alongside baseline control strategies.</li></ul>
-  </div></div>
-</section>
-<section id="control">
-  <div class="research-card"><div class="research-visual"><svg class="research-art" viewBox="0 0 560 280" role="img" aria-label="Hierarchical network controller with strategic and tactical layers" xmlns="http://www.w3.org/2000/svg">
+  <div class="research-card"><div class="research-visual"><svg class="research-art" viewBox="0 0 560 280" role="img" aria-label="SCED-HRL strategic, spatial and tactical layers" xmlns="http://www.w3.org/2000/svg">
       <rect x="1" y="1" width="558" height="278" rx="15" fill="#f5f9f8" stroke="#dce9e7"/>
-      <path d="M280 88V118M280 176V199M162 199V185H398V199" fill="none" stroke="#9dbfc5" stroke-width="3"/>
       <g font-family="Inter,Arial,sans-serif" text-anchor="middle">
-        <rect x="174" y="35" width="212" height="54" rx="10" fill="#173b52"/><text x="280" y="58" fill="#fff" font-size="15" font-weight="700">Strategic control</text><text x="280" y="76" fill="#c6e7e8" font-size="11">event-driven PPO</text>
-        <rect x="174" y="120" width="212" height="56" rx="10" fill="#287788"/><text x="280" y="143" fill="#fff" font-size="15" font-weight="700">Tactical decisions</text><text x="280" y="161" fill="#d9f0ef" font-size="11">shared DDQN agents</text>
-        <rect x="72" y="199" width="180" height="51" rx="10" fill="#e5f1ef" stroke="#9dbfc5"/><text x="162" y="230" fill="#24566a" font-size="13" font-weight="600">Region A · energy budget</text>
-        <rect x="308" y="199" width="180" height="51" rx="10" fill="#e5f1ef" stroke="#9dbfc5"/><text x="398" y="230" fill="#24566a" font-size="13" font-weight="600">Region B · energy budget</text>
+        <rect x="174" y="24" width="212" height="54" rx="10" fill="#173b52"/><text x="280" y="47" fill="#fff" font-size="14" font-weight="700">Event-driven strategic control</text><text x="280" y="65" fill="#c6e7e8" font-size="11">PPO · adaptive trigger</text>
+        <path d="M280 78V101" stroke="#9dbfc5" stroke-width="3"/>
+        <rect x="174" y="101" width="212" height="54" rx="10" fill="#287788"/><text x="280" y="124" fill="#fff" font-size="14" font-weight="700">Spatial energy budgeting</text><text x="280" y="142" fill="#d9f0ef" font-size="11">region-wise constraints</text>
+        <path d="M280 155V178M151 178V194M409 178V194M151 178H409" stroke="#9dbfc5" stroke-width="3" fill="none"/>
+        <rect x="55" y="194" width="192" height="55" rx="10" fill="#e5f1ef" stroke="#9dbfc5"/><text x="151" y="217" fill="#24566a" font-size="13" font-weight="700">Tactical DDQN agents</text><text x="151" y="235" fill="#466a74" font-size="11">Sleep · Relay · Transmit</text>
+        <rect x="313" y="194" width="192" height="55" rx="10" fill="#e5f1ef" stroke="#9dbfc5"/><text x="409" y="217" fill="#24566a" font-size="13" font-weight="700">Feasibility guards</text><text x="409" y="235" fill="#466a74" font-size="11">action masking · constraints</text>
       </g>
-    </svg><span>Strategic and tactical layers (conceptual illustration)</span></div><div class="research-copy">
-    <p class="meta">Hierarchical Reinforcement Learning</p><h2>Adaptive Control Under Network Constraints</h2>
-    <p>Event-driven strategic decisions and shared tactical policies respond to changes in network conditions. Spatial energy constraints and action masking keep decisions tied to feasible deployment behavior.</p>
-    <ul><li>Strategic layer: event-driven PPO.</li><li>Tactical layer: parameter-shared DDQN agents.</li><li>Evaluation dimensions: lifetime, fairness, latency, and packet delivery.</li></ul>
+    </svg><span>Conceptual summary of the SCED-HRL hierarchy.</span></div><div class="research-copy">
+    <div class="status-row"><span class="badge submitted">Submitted to ICEEICT 2027</span><span class="badge first">First Author</span><span class="badge">Undergraduate Thesis</span></div>
+    <p class="meta">Wireless Sensor Networks · Energy Optimization · Hierarchical Reinforcement Learning</p>
+    <h2>Spatially-Constrained Event-Driven Hierarchical Deep Reinforcement Learning (SCED-HRL)</h2>
+    <p>SCED-HRL is my B.Sc. thesis framework for energy-aware WSN control. It separates network-level strategic adaptation from node-level tactical decisions and adds spatial constraints so that learning does not improve one part of the network by prematurely exhausting another.</p>
+    <div class="research-question"><strong>Core design:</strong> an event-driven PPO strategic layer activates only when an adaptive instability score requires intervention; a spatial budgeting layer distributes region-wise energy constraints; DDQN tactical agents make local routing/operation decisions under action masking and feasibility guards.</div>
+    <ul><li>Simulation uses a 50-node WSN with traffic derived from the Intel Berkeley sensor dataset plus synthetic traffic conditions.</li><li>Evaluation covers network lifetime, energy balance, packet delivery and robustness under multiple traffic patterns.</li><li>Reported results in the submitted manuscript include 2,143-round LND, 94.2% PDR and energy CV 0.17.</li><li>Relative to the strongest fixed-spatial HRL baseline, the study reports 13.8% longer lifetime; the event-trigger mechanism reduces strategic invocations by 83%, and spatial budgeting improves energy fairness by 26%.</li></ul>
   </div></div>
+  <div class="highlight-box">
+    <div class="highlight-item"><strong>+13.8%</strong><span>Network lifetime vs. fixed spatial HRL baseline</span></div>
+    <div class="highlight-item"><strong>94.2%</strong><span>Packet delivery ratio</span></div>
+    <div class="highlight-item"><strong>0.17</strong><span>Final energy coefficient of variation</span></div>
+    <div class="highlight-item"><strong>−83%</strong><span>Strategic-control invocations vs. fixed interval</span></div>
+    <div class="highlight-item"><strong>4 regions</strong><span>Spatial energy budgeting in the reported setup</span></div>
+    <div class="highlight-item"><strong>PPO + DDQN</strong><span>Strategic and tactical learning layers</span></div>
+  </div>
+  <p class="meta" style="margin-top:10px">These figures are reported results from the submitted SCED-HRL manuscript and simulation study; the manuscript is not presented as accepted work.</p>
 </section>
-<section><div class="section-head"><p class="kicker">Related Interests</p><h2>Beyond the Thesis</h2></div>
+<section id="thrift">
+  <div class="research-card"><div class="research-visual"><svg class="research-art" viewBox="0 0 560 280" role="img" aria-label="THRIFT federated knowledge-transfer workflow" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="558" height="278" rx="15" fill="#f8faf9" stroke="#dce9e7"/>
+      <g font-family="Inter,Arial,sans-serif" text-anchor="middle">
+        <rect x="25" y="50" width="150" height="72" rx="11" fill="#edf4f1" stroke="#a9c8be"/><text x="100" y="76" fill="#315f57" font-size="13" font-weight="700">Sensor / gateway</text><text x="100" y="95" fill="#55756f" font-size="11">local LSTM clients</text><text x="100" y="111" fill="#55756f" font-size="11">raw traffic stays local</text>
+        <path d="M176 86H222" stroke="#9dbfc5" stroke-width="3"/><polygon points="222,86 211,80 211,92" fill="#9dbfc5"/>
+        <rect x="222" y="50" width="116" height="72" rx="11" fill="#e8f0f4" stroke="#9dbdca"/><text x="280" y="76" fill="#24566a" font-size="13" font-weight="700">Signal gate</text><text x="280" y="95" fill="#466a74" font-size="11">recall / drift / loss</text><text x="280" y="111" fill="#466a74" font-size="11">cooldown</text>
+        <path d="M339 86H385" stroke="#9dbfc5" stroke-width="3"/><polygon points="385,86 374,80 374,92" fill="#9dbfc5"/>
+        <rect x="385" y="36" width="150" height="100" rx="11" fill="#eef0f6" stroke="#b6bdd0"/><text x="460" y="64" fill="#394b6b" font-size="13" font-weight="700">Server-side teacher</text><text x="460" y="83" fill="#5d6780" font-size="11">temporal GNN</text><text x="460" y="101" fill="#5d6780" font-size="11">compact telemetry</text><text x="460" y="119" fill="#5d6780" font-size="11">int8 targets + cache</text>
+        <path d="M460 137V174H100V137" stroke="#b2c8c2" stroke-width="2.5" fill="none"/><polygon points="100,137 94,148 106,148" fill="#b2c8c2"/>
+        <rect x="134" y="183" width="292" height="53" rx="11" fill="#173b52"/><text x="280" y="205" fill="#fff" font-size="13" font-weight="700">Selective teacher refresh instead of repeated transfer</text><text x="280" y="224" fill="#c6e7e8" font-size="11">federated learning · communication accounting · WSN intrusion detection</text>
+      </g>
+    </svg><span>Conceptual summary of the THRIFT selective knowledge-transfer workflow.</span></div><div class="research-copy">
+    <div class="status-row"><span class="badge submitted">Submitted to ICEEICT 2027</span><span class="badge">Coauthor</span></div>
+    <p class="meta">Federated Learning · Intrusion Detection · Temporal GNNs · WSN Communication Cost</p>
+    <h2>THRIFT: Selective Graph-Teacher Knowledge Transfer for Federated Intrusion Detection</h2>
+    <p>THRIFT studies whether a lightweight federated WSN detector can selectively obtain topology-aware teacher knowledge without continuously retransmitting expensive information. Gateways retain local training records while compact telemetry supports graph reconstruction and a frozen temporal-GNN teacher on the server.</p>
+    <div class="research-question"><strong>System idea:</strong> compressed teacher targets are cached at clients and refreshed only when a server-side signal gate opens, with a cooldown preventing back-to-back transfers. Communication accounting includes model traffic, teacher targets, summaries and graph telemetry.</div>
+    <ul><li>Across 98 telemetry messages, reconstructed node sets, timing and topology matched the reference audit, with unchanged teacher F1 at reported precision.</li><li>Five diagnostic runs report 12.54 MB mean serialized communication for THRIFT versus 14.42 MB periodic and 14.53 MB always-on transfer.</li><li>The reported communication reductions are 13.01% versus periodic and 13.69% versus always-on transfer.</li><li>An OMNeT++ packet-radio replay preserves the same ranking, with modeled radio energy about 13% lower than the two controls.</li></ul>
+  </div></div>
+  <p class="meta">The THRIFT manuscript explicitly treats the five runs and fixed thresholds as exploratory/diagnostic rather than held-out confirmation.</p>
+</section>
+<section><div class="section-head"><p class="kicker">Broader Research Direction</p><h2>Where I Want to Build Next</h2></div>
   <div class="grid-2">
-    <div class="card"><h3>IoT &amp; Wireless Communications</h3><p>Connected sensor systems, communication reliability, and resource-aware design across changing traffic and deployment conditions.</p></div>
-    <div class="card"><h3>Learning for Resource Management</h3><p>Reinforcement learning and optimization methods evaluated through practical network outcomes and feasibility constraints.</p></div>
+    <div class="card support-card"><h3>Energy-Efficient Wireless &amp; IoT Systems</h3><p>Adaptive routing, resource allocation, network lifetime, communication reliability and energy-aware operation for distributed sensing systems.</p></div>
+    <div class="card support-card"><h3>Intelligent Network Control</h3><p>Reinforcement learning and optimization for wireless systems, especially when actions must satisfy explicit feasibility, safety or resource constraints.</p></div>
+    <div class="card support-card"><h3>Distributed / Federated Intelligence</h3><p>Communication-efficient learning across networked edge devices, including selective knowledge transfer, privacy-aware data boundaries and lightweight local models.</p></div>
+    <div class="card support-card"><h3>WSN Security &amp; Smart IoT</h3><p>Intrusion detection, anomaly-aware resource management, and secure sensing architectures for industrial and smart-city applications.</p></div>
   </div>
 </section>
 </main>
   <footer class="site-footer"><div class="wrap footer-grid">
     <div><strong>© 2026 Udita Rahman Arshee</strong><span>Wireless networks research · Khulna, Bangladesh</span></div>
-    <div class="footer-links"><a href="mailto:uditrahman2001@gmail.com">✉ Email</a><a href="https://www.linkedin.com/in/udita-arshee-65b411240/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/udita-arshee" target="_blank" rel="noopener">GitHub</a></div>
+    <div class="footer-links"><a href="mailto:uditrahman2001@gmail.com">✉ Email</a><a href="Udita_Rahman_Arshee_CV.pdf" target="_blank" rel="noopener">📄 CV</a><a href="https://www.linkedin.com/in/udita-arshee-65b411240/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/udita-arshee" target="_blank" rel="noopener">GitHub</a></div>
   </div></footer>
 </body>
 </html>
