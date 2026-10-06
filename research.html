@@ -98,7 +98,6 @@
     <div class="research-question"><strong>System idea:</strong> compressed teacher targets are cached at clients and refreshed only when a server-side signal gate opens, with a cooldown preventing back-to-back transfers. Communication accounting includes model traffic, teacher targets, summaries and graph telemetry.</div>
     <ul><li>Across 98 telemetry messages, reconstructed node sets, timing and topology matched the reference audit, with unchanged teacher F1 at reported precision.</li><li>Five diagnostic runs report 12.54 MB mean serialized communication for THRIFT versus 14.42 MB periodic and 14.53 MB always-on transfer.</li><li>The reported communication reductions are 13.01% versus periodic and 13.69% versus always-on transfer.</li><li>An OMNeT++ packet-radio replay preserves the same ranking, with modeled radio energy about 13% lower than the two controls.</li></ul>
   </div></div>
-  <p class="meta">The THRIFT manuscript explicitly treats the five runs and fixed thresholds as exploratory/diagnostic rather than held-out confirmation.</p>
 </section>
 <section><div class="section-head"><p class="kicker">Broader Research Direction</p><h2>Where I Want to Build Next</h2></div>
   <div class="grid-2">
