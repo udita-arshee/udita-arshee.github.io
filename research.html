@@ -41,17 +41,56 @@
     <ul><li>Simulation uses a 50-node WSN with traffic derived from the Intel Berkeley sensor dataset plus synthetic traffic conditions.</li><li>Evaluation covers network lifetime, energy balance, packet delivery and robustness under multiple traffic patterns.</li><li>Reported results in the submitted manuscript include 2,143-round LND, 94.2% PDR and energy CV 0.17.</li><li>Relative to the strongest fixed-spatial HRL baseline, the study reports 13.8% longer lifetime; the event-trigger mechanism reduces strategic invocations by 83%, and spatial budgeting improves energy fairness by 26%.</li></ul>
   </div></div>
   <div class="highlight-box">
-    <div class="highlight-item"><strong>+13.8%</strong><span>Network lifetime vs. fixed spatial HRL baseline</span></div>
+    <div class="highlight-item"><strong>+13.8%</strong><span>Network lifetime vs. fixed spatial HRL</span></div>
     <div class="highlight-item"><strong>94.2%</strong><span>Packet delivery ratio</span></div>
     <div class="highlight-item"><strong>0.17</strong><span>Final energy coefficient of variation</span></div>
-    <div class="highlight-item"><strong>−83%</strong><span>Strategic-control invocations vs. fixed interval</span></div>
-    <div class="highlight-item"><strong>4 regions</strong><span>Spatial energy budgeting in the reported setup</span></div>
-    <div class="highlight-item"><strong>PPO + DDQN</strong><span>Strategic and tactical learning layers</span></div>
+    <div class="highlight-item"><strong>+26%</strong><span>Improvement in energy fairness</span></div>
+    <div class="highlight-item"><strong>83% fewer</strong><span>Strategic-control invocations</span></div>
+    <div class="highlight-item"><strong>2,143 rounds</strong><span>Last-node-death network lifetime</span></div>
   </div>
-  <p class="meta" style="margin-top:10px">These figures are reported results from the submitted SCED-HRL manuscript and simulation study; the manuscript is not presented as accepted work.</p>
 </section>
 <section id="thrift">
-  <div class="research-card"><div class="research-visual"><img class="research-art" src="assets/research/thrift-overview.svg" alt="THRIFT architecture showing federated gateways, a server-side signal gate, digital-twin graph teacher and compressed target refresh" loading="lazy" /><span>Conceptual summary of the THRIFT selective knowledge-transfer workflow.</span></div><div class="research-copy">
+  <div class="research-card"><div class="research-visual"><svg class="research-art" viewBox="0 0 560 280" role="img" aria-label="THRIFT workflow with federated gateways, a server-side signal gate, a digital-twin graph teacher and compressed target refresh" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="558" height="278" rx="16" fill="#f8fbfb" stroke="#d9e7e8"/>
+      <g font-family="Inter,Arial,sans-serif" text-anchor="middle">
+        <rect x="24" y="40" width="180" height="72" rx="12" fill="#f5fbfa" stroke="#8ebdb7" stroke-width="1.6"/>
+        <text x="114" y="67" fill="#10385a" font-size="14" font-weight="700">Federated gateways</text>
+        <text x="114" y="92" fill="#637f96" font-size="11.2">LSTM students</text>
+        <text x="114" y="108" fill="#637f96" font-size="11.2">raw traffic stays local</text>
+
+        <rect x="232" y="40" width="190" height="72" rx="12" fill="#f8fbfd" stroke="#a8cee2" stroke-width="1.6"/>
+        <text x="327" y="67" fill="#10385a" font-size="14" font-weight="700">Server-side signal gate</text>
+        <text x="327" y="92" fill="#637f96" font-size="11.2">recall · model drift · loss</text>
+        <text x="327" y="108" fill="#637f96" font-size="11.2">one-round cooldown</text>
+
+        <rect x="450" y="40" width="91" height="72" rx="12" fill="#fafbff" stroke="#b9c1e4" stroke-width="1.6"/>
+        <text x="495.5" y="67" fill="#10385a" font-size="13.2" font-weight="700">Digital-twin</text>
+        <text x="495.5" y="83" fill="#10385a" font-size="13.2" font-weight="700">graph teacher</text>
+        <text x="495.5" y="101" fill="#637f96" font-size="9.8">telemetry decoder · frozen TGNN</text>
+        <text x="495.5" y="115" fill="#637f96" font-size="9.4">graph snapshots from compact telemetry</text>
+
+        <path d="M204 76H232" stroke="#86bac8" stroke-width="3"/>
+        <polygon points="232,76 222,71 222,81" fill="#86bac8"/>
+        <path d="M422 76H450" stroke="#86bac8" stroke-width="3"/>
+        <polygon points="450,76 440,71 440,81" fill="#86bac8"/>
+
+        <path d="M84 139V178" stroke="#86bac8" stroke-width="3"/>
+        <polygon points="84,139 79,149 89,149" fill="#86bac8" transform="rotate(180 84 139)"/>
+
+        <path d="M495 112V178H398" stroke="#86bac8" stroke-width="3" fill="none"/>
+        <polygon points="398,178 408,173 408,183" fill="#86bac8"/>
+
+        <rect x="232" y="150" width="190" height="60" rx="12" fill="#173b52"/>
+        <text x="327" y="177" fill="#fff" font-size="14" font-weight="700">Compressed target refresh</text>
+        <text x="327" y="196" fill="#dbe9f0" font-size="11.6">int8 targets · client cache reuse</text>
+
+        <path d="M232 180H84V112" stroke="#86bac8" stroke-width="3" fill="none"/>
+        <polygon points="84,112 79,122 89,122" fill="#86bac8"/>
+
+        <text x="280" y="246" fill="#10385a" font-size="16.5" font-weight="700">Selective teacher refresh instead of repeated transfer</text>
+        <text x="280" y="266" fill="#7a91a4" font-size="11.8">federated learning · communication accounting · WSN intrusion detection</text>
+      </g>
+    </svg><span>Conceptual summary of the THRIFT selective knowledge-transfer workflow.</span></div><div class="research-copy">
     <div class="status-row"><span class="badge submitted">Submitted to ICEEICT 2027</span><span class="badge">Coauthor</span></div>
     <p class="meta">Federated Learning · Intrusion Detection · Temporal GNNs · WSN Communication Cost</p>
     <h2>THRIFT: Selective Graph-Teacher Knowledge Transfer for Federated Intrusion Detection</h2>
