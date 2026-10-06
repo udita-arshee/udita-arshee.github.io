@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1774 887" role="img" aria-label="SCED-HRL architecture: event-driven strategic control, spatial energy budgeting, feasibility guards, and tactical DDQN agents">
+  <rect x="40" y="35" width="1694" height="792" rx="34" fill="#f8fbfb" stroke="#d7e5e6" stroke-width="3"/>
+  <g font-family="Inter,Arial,sans-serif" text-anchor="middle">
+    <rect x="520" y="91" width="690" height="155" rx="24" fill="#173b52"/>
+    <text x="865" y="159" fill="#fff" font-size="40" font-weight="700">Event-driven strategic control</text>
+    <text x="865" y="207" fill="#d6f0f0" font-size="30">PPO strategic agent · adaptive trigger</text>
+
+    <path d="M865 246V311" stroke="#8eb6c0" stroke-width="8"/>
+    <polygon points="865,323 851,299 879,299" fill="#8eb6c0"/>
+
+    <rect x="520" y="313" width="690" height="153" rx="24" fill="#2f8492"/>
+    <text x="865" y="379" fill="#fff" font-size="40" font-weight="700">Spatial energy budgeting</text>
+    <text x="865" y="429" fill="#dcf4f4" font-size="29">region-wise energy constraints</text>
+
+    <path d="M865 466V524H448V579" stroke="#8eb6c0" stroke-width="7" fill="none"/>
+    <path d="M865 524H1295V579" stroke="#8eb6c0" stroke-width="7" fill="none"/>
+    <polygon points="448,592 434,568 462,568" fill="#8eb6c0"/>
+    <polygon points="1295,592 1281,568 1309,568" fill="#8eb6c0"/>
+
+    <rect x="125" y="580" width="670" height="189" rx="24" fill="#f7fbfb" stroke="#8eb6c0" stroke-width="3"/>
+    <text x="460" y="646" fill="#123b58" font-size="39" font-weight="700">Feasibility guards</text>
+    <text x="460" y="697" fill="#52758a" font-size="30">budget projection · action masking ·</text>
+    <text x="460" y="736" fill="#52758a" font-size="30">feasibility checking</text>
+
+    <rect x="985" y="580" width="620" height="189" rx="24" fill="#f7fbfb" stroke="#8eb6c0" stroke-width="3"/>
+    <text x="1295" y="651" fill="#123b58" font-size="39" font-weight="700">Tactical DDQN agents</text>
+    <text x="1295" y="707" fill="#52758a" font-size="29">Sleep · Forward · Direct transmission</text>
+
+    <path d="M795 676H958" stroke="#8eb6c0" stroke-width="7"/>
+    <polygon points="975,676 951,662 951,690" fill="#8eb6c0"/>
+  </g>
+</svg>
