@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1774 887" role="img" aria-label="THRIFT architecture with federated gateways, server-side signal gate, digital-twin graph teacher and compressed target refresh">
+  <rect x="36" y="32" width="1702" height="801" rx="38" fill="#fbfdfd" stroke="#dce9eb" stroke-width="3"/>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <rect x="78" y="150" width="430" height="215" rx="24" fill="#f8fcfb" stroke="#8fbdb7" stroke-width="4"/>
+    <text x="293" y="227" fill="#123b5a" font-size="41" font-weight="700">Federated gateways</text>
+    <text x="293" y="278" fill="#5d7892" font-size="31">LSTM students</text>
+    <text x="293" y="324" fill="#5d7892" font-size="31">raw traffic stays local</text>
+
+    <rect x="592" y="150" width="444" height="215" rx="24" fill="#f7fbfd" stroke="#a7cee1" stroke-width="4"/>
+    <text x="814" y="227" fill="#123b5a" font-size="41" font-weight="700">Server-side signal gate</text>
+    <text x="814" y="278" fill="#5d7892" font-size="31">recall · model drift · loss</text>
+    <text x="814" y="324" fill="#5d7892" font-size="31">one-round cooldown</text>
+
+    <rect x="1118" y="150" width="535" height="215" rx="24" fill="#fbfbff" stroke="#b7c0e4" stroke-width="4"/>
+    <text x="1385.5" y="227" fill="#123b5a" font-size="41" font-weight="700">Digital-twin graph teacher</text>
+    <text x="1385.5" y="278" fill="#5d7892" font-size="31">telemetry decoder · frozen TGNN</text>
+    <text x="1385.5" y="324" fill="#5d7892" font-size="30">graph snapshots from compact telemetry</text>
+
+    <path d="M508 257H592" stroke="#80b3c2" stroke-width="10"/>
+    <polygon points="592,257 567,243 567,271" fill="#80b3c2"/>
+    <path d="M1036 257H1118" stroke="#80b3c2" stroke-width="10"/>
+    <polygon points="1118,257 1093,243 1093,271" fill="#80b3c2"/>
+
+    <rect x="592" y="468" width="545" height="174" rx="24" fill="#173b52"/>
+    <text x="864.5" y="546" fill="#ffffff" font-size="41" font-weight="700">Compressed target refresh</text>
+    <text x="864.5" y="596" fill="#e1edf2" font-size="31">int8 targets · client cache reuse</text>
+
+    <path d="M1385 365V548H1137" stroke="#80b3c2" stroke-width="10" fill="none"/>
+    <polygon points="1137,548 1162,534 1162,562" fill="#80b3c2"/>
+    <path d="M592 548H293V365" stroke="#80b3c2" stroke-width="10" fill="none"/>
+    <polygon points="293,365 279,390 307,390" fill="#80b3c2"/>
+
+    <text x="887" y="745" fill="#123b5a" font-size="42" font-weight="700">Selective teacher refresh instead of repeated transfer</text>
+    <text x="887" y="797" fill="#7890a5" font-size="31">federated learning · communication accounting · WSN intrusion detection</text>
+  </g>
+</svg>
